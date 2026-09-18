@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Our Team</title>
+    <style>
+        :root {
+            --bg-main: #0a1128;
+            --bg-secondary: #16213e;
+            --bg-tertiary: #1e2a4a;
+            --text-primary: #ffffff;
+            --text-secondary: #b8c1d9;
+            --accent: #ff8c42;
+            --bar-color: #ff8c42;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            /* Memastikan halaman utama hanya 1 layar */
+            height: 100vh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        p.desc {
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .team-container {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: var(--bg-secondary);
+            padding: 2.5rem;
+            border-radius: 8px;
+            border: 1px solid #2a2a2a;
+            width: 300px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent);
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .card .role {
+            color: var(--accent);
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Meet Our Team</h1>
+    <p class="desc">
+        Kami adalah tim pengembang web yang berfokus pada perpaduan antarmuka pengguna yang indah dan sistem infrastruktur yang tangguh. Pilih salah satu profil di bawah untuk melihat detail kami.
+    </p>
+
+    <div class="team-container">
+        <!-- Card Anggota 1 -->
+        <a href="khelsea.html" class="card">
+            <h2>Khelsea Mourinho Sihotang</h2>
+            <p class="role">Backend & DevOps</p>
+        </a>
+
+        <!-- Card Anggota 2 -->
+        <a href="eep.html" class="card">
+            <h2>Eep Fathurohman</h2>
+            <p class="role">UI/UX & Frontend</p>
+        </a>
+    </div>
+
+</body>
+</html>
